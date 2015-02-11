@@ -1,0 +1,1 @@
+<a href=""><i class="glyphicon glyphicon-glass"></i> Table #<%= @id %></a>

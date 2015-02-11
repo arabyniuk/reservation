@@ -1,0 +1,34 @@
+<form id="reservation" action="/reservations" method="post">
+    <fieldset>
+      <legend>New Reservation</legend>
+      <div class="">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label for="start_time" class="control-label">Start Time</label>
+              <div class="controls">
+                <input value="<%= @start_time %>" type='text' class="form-control" id='start_time'/>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label for="end_time" class="control-label">End Time</label>
+              <div class="controls">
+                <input value="<%= @end_time %>" type='text' class="form-control" id='end_time'/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </fieldset>
+  </form>
+
+<script>
+$(function () {
+    $('#start_time, #end_time').datetimepicker({
+      format: 'YYYY/MM/DD h:mm:ss' 
+    });
+  });
+</script>

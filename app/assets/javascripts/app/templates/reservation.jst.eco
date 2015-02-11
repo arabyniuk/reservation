@@ -1,0 +1,11 @@
+<div class="alert alert-info">
+  <%= @start_time %> - <%= @end_time %>
+  <div class="pull-right">
+    <a class="edit-reservation" href="">
+      <i class="fa fa-pencil"></i>
+    </a>
+    <a class="remove-reservation" href="#">
+      <i class="fa fa-remove"></i>
+    </a>
+  </div>
+</div>
